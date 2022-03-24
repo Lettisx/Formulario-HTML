@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="icon" type="imagem/png" href="./assets/images/coffee-icon.png">
+
+    <title>Formulário</title>
+
+</head>
+<body>
+    <header>
+        <h1>Modelo de um formulário</h1>
+    </header> 
+
+    <main>
+        <form action="/action_page.php" method="post">
+        <fieldset class="IdentificaçãoCliente">
+            <legend>Identificação do Cliente</legend>
+                <label for="primeironome">Primeiro Nome:</label><br>
+                <input type="text" id="primeiro nome"
+                    name="primeiro nome" placeholder="seu primeiro nome"
+                    minlength="2" maxlength="70"
+                    autofocus requiered><br>
+                <label for="sobrenome">Sobrenome:</label> <br>
+                <input type="text" id="sobrenome"
+                   name="sobrenome"
+                   placeholder="seusobrenome"
+                   maxlength="70" required> <br>
+                <label for="datadenascimento">Data de Nascimento:</label> <br>
+                <input type="date" id="datadenascimento" 
+                       name="datadenascimento"> <br><br>
+                <label for="DataCadaastramento" title="Data de Cadastramento">Data de Cadastramento</label><br>
+                <input type="datetime-local" id="DataCadastramento"
+                name="DataCadastramento"> <br><br>
+                <label for="email"
+                title="E-mail">e-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="informe seu e-mail"><br><br>
+                <label for="fonecel"> Telefone Celular: </label><br>
+                <input type="text" id="fonecel"
+                pattern="[0-9] {2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"
+                placeholder="DDD-x-xxxx-xxxx"
+                title="Telefone Celular com DDD"> <br><br>
+
+                <label for="telefone"> Telefone: </label><br>
+                <input type="tel" id="fone"
+                pattern="[0-9] {2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"
+                placeholder="DDD-x-xxxx-xxxx"
+                title="Telefone com DDD"> <br><br>
+        </fieldset>
+
+        <fieldset class="CaracteristicasPessoais">
+            <legend>Caracteristicas Pessoais</legend>
+            <legend>Cor da Pele</legend> 
+               <input type="radio"
+               id="corNegra"
+               name="cor_declarada" value="negra" checked>
+               <label for="corNegra">Negra</label>
+
+               <input type="radio"
+               id="corParda"
+               name="cor_declarada" value="parda" checked>
+               <label for="corParda">Parda</label>
+
+               <input type="radio"
+               id="corBranca"
+               name="cor_declarada" value="branca" checked>
+               <label for="corBranca">Branca</label>
+
+               <input type="radio"
+               id="corMorena"
+               name="cor_declarada" value="Morena" checked>
+               <label for="corMorena">Morena</label>
+
+               <input type="radio"
+               id="corAmarela"
+               name="cor_declarada" value="Amarela" checked>
+               <label for="corAmarela">Amarela</label>
+            </fieldset>
+
+            <fieldset class="sexo"> 
+               <legend>Sexo</legend>
+               <input type="radio" 
+               id="masculino"
+               name="sexo" value="masculino">
+               <label for="masculino">Masculino</label>
+
+               <input type="radio" 
+               id="TransMas"
+               name="sexo" value="TransMasc">
+               <label for="TransMasc">Trans Masculino</label>
+
+               <input type="radio" 
+               id="feminino"
+               name="sexo" value="feminino">
+               <label for="feminino">Feminino</label>
+
+               <input type="radio" 
+               id="TransFem"
+               name="sexo" value="TransFem">
+               <label for="TransFem">Trans Feminino</label>
+
+               <input type="radio" 
+               id="NaoDeclarado"
+               name="sexo" value="NaoDeclarado">
+               <label for="NaoDeclarado">Não Declarado</label>
+
+               <input type="radio" 
+               id="Travesti"
+               name="sexo" value="Travesti">
+               <label for="Travesti">Travesti</label>
+               
+
+
+
+
+
+            </fieldset>
+
+
+             
+
+
+
+                
+
+
+
+
+                
+
+                       
+            
+                
+                
+
+        </form> 
+    </main>    
+    
+    <footer>
+       <h3>Rodapé do formulário</h3>
+    </footer>
+
+
+
+    
+</body>
+</html>
